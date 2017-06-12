@@ -2,6 +2,7 @@
 import urllib2
 import sys
 import os
+import time
 
 start = "\033[1m"
 end = "\033[0;0m"
@@ -24,6 +25,7 @@ if answer == "s" or "S":
         os.system("git clone https://github.com/whtn12/meow-tool.git ../")
 elif answer == "p" or "P":
     print "[*] checking you major python version ..."
+    time.sleep(1)
     print "[*] Major version is " + major_str
     if major == 2:
         print "--> You script is already compatible !!"
